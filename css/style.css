@@ -2,6 +2,9 @@ html,
 body {
   font: 'Roboto';
   text-rendering: optimizeLegibility;
+  max-width: 100%;
+  /* clip (not hidden) avoids forcing overflow-y to auto, which breaks position: sticky elements */
+  overflow-x: clip;
 }
 
 .container {
@@ -84,6 +87,11 @@ img.mobile {
 /* When it's less than 500 pixels wide */
 
 @media only screen and (max-width: 500px) and (min-width: 250px) {
+  .container-fluid > #g-topper-mount ~ * {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   img {
     width: 70%;
   }

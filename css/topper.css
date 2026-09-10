@@ -113,6 +113,8 @@
 /* --- scrollytelling --- */
 #g-topper-scrolly {
   position: relative;
+  /* clip (not hidden) avoids forcing overflow-y to auto, which would break the sticky graphic below */
+  overflow-x: clip;
 }
 #g-topper-graphic {
   position: -webkit-sticky;
