@@ -213,7 +213,7 @@
   margin: 0 auto;
   padding: 16px 18px;
   background: rgba(255, 255, 255, 0.92);
-  border-left: 3px solid #404040;
+  box-shadow: 0 8px 20px rgba(33, 37, 41, 0.16);
   font-size: 17px;
   line-height: 1.45;
   color: rgb(33, 37, 41);
